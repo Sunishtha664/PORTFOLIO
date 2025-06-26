@@ -359,42 +359,170 @@ body {
 
 
 }
+.skills-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 40px;
+    background: url('image/bg1.jpg') no-repeat center/cover;
+    padding: 40px 0; 
+    border-radius: 24px;
+}
 
 .container1 {
-    width: 600px;
-    height: 500px;
-    padding: 75px 90px;
-    margin-left: 120px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(125, 24, 24, 0.08);
+    color: #222;
+    width: 500px;
+    min-height: 400px;
+    padding: 40px 30px;
+    margin: 0;
 
 }
-.heading1{
+
+.heading1 {
     text-align: center;
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
 
 }
-.bar{
+
+.bar {
     font-size: 23px;
 
 }
-.Technical-bars .bar{
-    margin-top: 40px 0;
+
+.Technical-bars .bar {
+       display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
 }
-.Technical-bars .bar:first-child{
+
+.Technical-bars .bar:first-child {
     margin-top: 0;
 }
-.Technical-bars .bar:last-child{
+
+.Technical-bars .bar:last-child {
     margin-bottom: 0;
 }
-.Technical-bars .bar .info{
+
+.Technical-bars .bar .info {
     margin-bottom: 5px;
 }
-.Technical-bars .bar .info span{
-   font-size: 17px;
+
+.Technical-bars .bar .info span {
+    font-size: 18px;
     font-weight: 500;
     animation: showText 0.5s linear forwards;
     opacity: 0;
-    
+    color: #222;
+    min-width: 80px;
+
+}
+
+.Technical-bars .bar .progress-line {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 12px;
+    background-color: #eee;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+     margin-bottom: 18px;
+overflow: hidden;
+
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+.Technical-bars .bar .progress-line span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(173, 48, 48);
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: width 1s cubic-bezier(1, 0, 0.5, 1);
+}
+
+.progress-line.html span{
+    width: 90%;
+}
+.progress-line.css span {
+    width: 60%;
+}
+.progress-line.javascript span {
+    width: 85%;
+}
+.progress-line.python span {
+    width: 50%;
+}
+.progress-line.react span {
+    width: 75%;
+}
+.progress-line span::after{
+    position: absolute;
+    padding: 2px 8px;
+   background: rgb(173, 48, 48);
+    color: #fff;
+    font-size: 13px;
+     font-weight: 600;
+    border-radius: 4px;
+    top: -28px;
+    right: 8px;
+    box-shadow: 0 2px 8px rgba(173, 48, 48, 0.15);
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 1;
+
+}
+.progress-line.html span::after {
+    content: "90%";
+}
+.progress-line.css span::after {
+    content: "60%";
+}
+.progress-line.javascript span::after {
+    content: "85%";
+}
+.progress-line.python span::after {
+    content: "90%";
+}
+.progress-line.react span::after {
+    content: "90%";
+}
+.progress-line span::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000000;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+
+
+}
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+.radial-bars{
+    width: 100%;
 }
