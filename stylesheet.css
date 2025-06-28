@@ -766,6 +766,7 @@ body {
     font-weight: 600;
 
 }
+
 .layer p {
     font-size: 1rem;
     color: #000000;
@@ -773,7 +774,8 @@ body {
     line-height: 1.8;
 
 }
-.layer i{
+
+.layer i {
     color: #250202;
     margin-top: 20px;
     font-size: 20px;
@@ -786,13 +788,16 @@ body {
     border-radius: 50%;
 
 }
+
 .row:hover img {
     transform: scale(1.1);
 }
+
 .row:hover .layer {
     height: 100%;
 }
-.contact{
+
+.contact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
@@ -800,6 +805,5 @@ body {
     padding-left: 30px;
     margin-top: 130px;
 }
-.contact-text h2{
-    
-}
+
+.contact-text h2 {}
