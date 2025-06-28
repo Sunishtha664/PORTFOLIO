@@ -54,6 +54,7 @@ body {
     color: rgb(173, 48, 48);
 }
 
+
 .home {
     position: relative;
     width: 100%;
@@ -80,12 +81,17 @@ body {
 
 .home-content h3:nth-of-type(2) {
     margin-bottom: 30px;
-    animation: slideTop 1s ease forwards;
-    animation-delay: .8s;
+   
 }
 
 .home-content h3 span {
-    color: rgb(173, 48, 48);
+    color: rgb(124, 17, 17);
+    font-weight: 700;
+    font-size: 31px;
+    display: inline-block;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
 }
 
 .home-content h1 {
@@ -520,7 +526,7 @@ body {
     width: 85%;
 }
 
-.progress-line.python span {
+.progress-line.Java span {
     width: 50%;
 }
 
@@ -556,7 +562,7 @@ body {
     content: "85%";
 }
 
-.progress-line.python span::after {
+.progress-line.Java span::after {
     content: "90%";
 }
 
