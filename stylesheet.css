@@ -861,8 +861,8 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 90px;
+    height: 90px;
     background: transparent;
     border: 2px solid rgb(113, 72, 72);
     border-radius: 50%;
@@ -884,4 +884,41 @@ body {
 .contact-form form{
     position: relative;
 }
+.contact-form form input,form textarea {
+    width: 90%;
+    padding: 18px;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    background: #f0f0f0;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    transition: all .3s ease;
 
+}
+.contact-form textarea{
+    height: 220px;
+    resize: none;
+}
+.contact-form form .send{
+       display: inline-block;
+    padding: 14px 60px;
+    background: rgb(173, 48, 48);
+    border-radius: 40px;
+    font-size: 18px;
+    color: #250202;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px rgba(173, 48, 48, 0.5);
+}
+.contact-form form .send:hover {
+    background: #fff;
+    color: rgb(173, 48, 48);
+    box-shadow: 0 0 20px rgba(173, 48, 48, 0.5);
+}
