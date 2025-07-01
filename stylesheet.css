@@ -881,3 +881,7 @@ body {
     color: #fff;
     box-shadow: 0 0 20px rgba(173, 48, 48, 0.5);
 }
+.contact-form form{
+    position: relative;
+}
+
