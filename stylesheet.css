@@ -715,10 +715,12 @@ body {
 }
 
 .main-text h2 {
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
-    margin-bottom: 50px;
     color: #7d1818;
+    /* ✅ Dark reddish-brown */
+    line-height: 1;
+    margin-bottom: 50px;
 }
 
 .main-text h2 span {
@@ -789,13 +791,16 @@ body {
 }
 
 .contact {
+    background: #f5e5d9;
+    /* light brown */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
     align-items: center;
-    padding-left: 30px;
+    padding: 60px 10%;
     margin-top: 130px;
     color: #333;
+    border-radius: 12px;
 }
 
 .contact-text h2 {
