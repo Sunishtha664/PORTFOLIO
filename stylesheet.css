@@ -716,65 +716,67 @@ body {
 
 .main-text h2 {
     font-size: 50px;
-  text-align: center;
-  margin-bottom: 50px;
-  color: #7d1818;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #7d1818;
 }
+
 .main-text h2 span {
-  color: rgb(173, 48, 48);
+    color: rgb(173, 48, 48);
 }
 
 .portfolio-content {
     display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 40px;
-  padding: 0 10%;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    padding: 0 10%;
 }
 
 .row {
-   background: #fff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
+
 .row:hover {
-  transform: translateY(-10px);
+    transform: translateY(-10px);
 }
 
 
 .row img {
     width: 100%;
-  height: 200px;
-  object-fit: cover;
-  display: block;
+    height: 200px;
+    object-fit: cover;
+    display: block;
 
 }
 
 .layer {
     padding: 20px;
-  background: #f8f8f8;
-  transition: background 0.3s ease;
+    background: #f8f8f8;
+    transition: background 0.3s ease;
 
 }
 
 .layer h5 {
     color: #7d1818;
-  font-size: 20px;
-  margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
 
 }
 
 .layer p {
     font-size: 14px;
-  color: #333;
-  line-height: 1.5;
+    color: #333;
+    line-height: 1.5;
 }
 
 .layer i {
     margin-top: 15px;
-  font-size: 20px;
-  color: rgb(173, 48, 48);
+    font-size: 20px;
+    color: rgb(173, 48, 48);
 
 }
 
@@ -821,20 +823,24 @@ body {
     color: #333;
     margin-bottom: 2rem;
 }
-.contact-list{
+
+.contact-list {
     margin-bottom: 3rem;
 }
+
 .contact-list li {
     display: block;
     align-items: center;
     margin-bottom: 15px;
 }
+
 .contact-list li i {
     font-size: 20px;
     color: rgb(173, 48, 48);
     margin-right: 10px;
 }
-.contact-list i{
+
+.contact-list i {
     display: inline-block;
     color: rgb(173, 48, 48);
     font-size: 20px;
@@ -842,11 +848,13 @@ body {
     transition: all .40s ease;
 
 }
-.contact-list li a:hover{
-    transform : scale(1.01) translateY(-5px);
+
+.contact-list li a:hover {
+    transform: scale(1.01) translateY(-5px);
     color: rgb(173, 48, 48);
 }
-.contact icons i{
+
+.contact icons i {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -856,7 +864,7 @@ body {
     border: 2px solid rgb(113, 72, 72);
     border-radius: 50%;
     font-size: 20px;
-    color: rgb(80, 13, 13); 
+    color: rgb(80, 13, 13);
     text-decoration: none;
     margin: 30px 15px 30px 0;
     transition: .5s ease;
@@ -865,15 +873,19 @@ body {
     animation-delay: calc(.2s* var(--i));
 
 }
+
 .contact-icons i:hover {
     background: rgb(173, 48, 48);
     color: #fff;
     box-shadow: 0 0 20px rgba(173, 48, 48, 0.5);
 }
-.contact-form form{
+
+.contact-form form {
     position: relative;
 }
-.contact-form form input,form textarea {
+
+.contact-form form input,
+form textarea {
     width: 90%;
     padding: 18px;
     border: none;
@@ -887,12 +899,14 @@ body {
     transition: all .3s ease;
 
 }
-.contact-form textarea{
+
+.contact-form textarea {
     height: 220px;
     resize: none;
 }
-.contact-form form .send{
-       display: inline-block;
+
+.contact-form form .send {
+    display: inline-block;
     padding: 14px 60px;
     background: rgb(173, 48, 48);
     border-radius: 40px;
@@ -906,12 +920,14 @@ body {
     animation-delay: 2s;
     box-shadow: 0 0 5px rgba(173, 48, 48, 0.5);
 }
+
 .contact-form form .send:hover {
     background: #fff;
     color: rgb(173, 48, 48);
     box-shadow: 0 0 20px rgba(173, 48, 48, 0.5);
 }
-.last-text p{
+
+.last-text p {
     width: 100%;
     text-align: center;
     padding: 25px 0;
@@ -921,6 +937,7 @@ body {
     margin-top: 70px;
 
 }
+
 .top {
     position: fixed;
     bottom: 20px;
